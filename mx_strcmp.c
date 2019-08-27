@@ -25,7 +25,7 @@ int mx_binary_search(char **arr, int size, const char *s, int *count){
 		left_border = mid - 1;
 		if (mx_strcmp(arr[left_border], s) < 0) {
 			left_border = mid;
-			right_border = size;
+			right_border = size - 1;
 		}
 	}
 }
